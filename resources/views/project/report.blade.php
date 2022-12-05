@@ -12,7 +12,7 @@
                     <img src="{{ asset('assets/images/NU.png') }}" alt="" height="130px" class="mt-1">
                     <div class="card-title fs-2 mt-3 ms-2">
                         Laporan Data Pekerjaan
-                        <p class="fs-6 mb-0">CV.Napoleon Utara</p>
+                        <p class="fs-6 mb-0">CV. Napoleon Utara</p>
                         <p class="fs-6 mb-0">Jl.Tok Aziz Singgang Bulan</p>
                         <p class="fs-6 mb-0"></p>
                     </div>
