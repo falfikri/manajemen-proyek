@@ -14,6 +14,8 @@
             <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Edit Data {{ $todo->name }}</h4>
+
+                  
                     <form action="{{ route('todo.update', $todo->id) }}" method="POST">
                         @csrf
                         @method('PUT')
