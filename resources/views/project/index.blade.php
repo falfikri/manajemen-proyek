@@ -2,7 +2,7 @@
 
 @section('title', 'List Kerja')
 
-@section('pagetitle', 'ToDo List')
+@section('pagetitle', 'Pabrik Ikan / ToDo List')
 
 @section('breadOld', 'List')
 
@@ -22,13 +22,22 @@
             <div class="card" style="border-radius: 10px">
               <div class="card-body">
                 <div class="row">
-                    <div class="col" style="display: flex; justify-content: flex-end; margin-right: 8%;">
+                    <div class="col" style="display: flex; justify-content: space-between; margin: 10px">
+
+                      <a href="{{ route('report') }}">
+                        <button class="btn btn-outline-primary btn-md">
+                          <i class="mdi mdi-printer"></i>
+                          Print (Laporan)
+                        </button>
+                      </a>
+
                       <a href="{{ route('todo.create') }}">
-                        <button class="btn btn-success btn-md">
+                        <button class="btn btn-outline-success btn-md">
                           <i class="mdi mdi-plus"></i>
                           Tambah Data
                         </button>
                       </a>
+
                     </div>
                   </div>
                   <br>
@@ -37,7 +46,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Pekerjaan</th>
+                            <th>Nama Pekerjaan</th>
                             <th>Deskripsi</th>
                             <th style="width: 15%">Progress</th>
                             <th>Status</th>
@@ -138,5 +147,3 @@
     </div>
 
 @endsection
-
-{{-- on progres, stop, finish --}}

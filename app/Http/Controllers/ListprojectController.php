@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Listproject;
 use Illuminate\Http\Request;
+use App\Models\Listproject;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\ListprojectRequest;
 
@@ -119,5 +119,11 @@ class ListprojectController extends Controller
     {
         $delay = DB::table('listprojects')->where('status', '=', 'delay')->paginate(5);
         return view('project.delay', ['delay' => $delay]);
+    }
+
+    public function report()
+    {
+        $data = Db::table('listprojects')->orderBy('progres')->get();
+        return view('project.report',['data' => $data]);
     }
 }
