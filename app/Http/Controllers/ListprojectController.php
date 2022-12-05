@@ -63,7 +63,6 @@ class ListprojectController extends Controller
      */
     public function edit($id)
     {
-        // Listproject::findOrFail($id);
         return view('project.edit', [
             'todo' => Listproject::findOrFail($id)
         ]);
@@ -101,7 +100,6 @@ class ListprojectController extends Controller
     public function onprogres()
     {
         $onprogres = DB::table('listprojects')->where('status', '=', 'on progres')->paginate(5);
-        // $onprogres->description = Str::limit($onprogres->description, 1);
         return view('project.onprogres', ['onprogres' => $onprogres]);
     }
     

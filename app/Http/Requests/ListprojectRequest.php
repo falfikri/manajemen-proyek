@@ -59,7 +59,6 @@ class ListprojectRequest extends FormRequest
             'progres.required'     => 'progres pengerjaan tidak boleh kosong',
             'progres.numeric'      => 'progres pengerjaan hanya boleh angka',
             'progres.max:100'      => 'progres pengerjaan hanya boleh maksimal 100',
-            // 'progres.min:1'        => 'progres pengerjaan minimal 1',
         ];
     }
 }

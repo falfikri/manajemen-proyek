@@ -22,10 +22,10 @@
             <div class="card" style="border-radius: 10px">
               <div class="card-body">
                 <div class="row">
-                    <div class="col" style="display: flex; justify-content: space-between; margin: 10px">
+                    <div class="col" style="display: flex; justify-content: space-between;">
 
                       <a href="{{ route('report') }}">
-                        <button class="btn btn-outline-primary btn-md">
+                        <button class="btn btn-outline-danger btn-md">
                           <i class="mdi mdi-printer"></i>
                           Print (Laporan)
                         </button>
@@ -97,19 +97,7 @@
                                 <td>
                                   {{ date('d-m-Y', strtotime($dt->finish)) }}
                                 </td>
-                                {{-- <td>
-                                  <div class="d-flex justify-content-center">
-                                    <a href="{!! route('todo.edit', $dt->id) !!}" style="margin-right: 10px">
-                                      <button class="btn btn-warning btn-sm"><i class="mdi mdi-pencil"></i></button>
-                                    </a> --}}
-                                    {{-- <form action="{{ route('todo.destroy', $dt->id) }}" method="POST" style="margin-right: 10px">
-                                      @csrf
-                                      @method('DELETE')
-                                      <button class="btn btn-danger btn-sm" type="submit"><i class="mdi mdi-cup"></i></button>
-                                    </form> --}}
-                                  {{-- </div>
-                                </td> --}}
-
+                                
                                 <td style="text-align: center">
                                   <div class="dropdown">
                                     <button type="button" class="btn" data-bs-toggle="dropdown"><i class="mdi mdi-alert-circle" style="font-size: 16px; color: orange"></i></button>

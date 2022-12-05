@@ -110,5 +110,3 @@
     </div>
 
 @endsection
-
-{{-- on progres, stop, finish --}}

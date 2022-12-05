@@ -1,6 +1,6 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
-      <li class="nav-item nav-category">Main</li>
+      <li class="nav-item nav-category">Main Menu</li>
 
       <li class="nav-item">
         <a class="nav-link" href="{{ route('todo.index') }}">

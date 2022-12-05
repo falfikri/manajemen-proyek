@@ -17,13 +17,4 @@ class Listproject extends Model
         'finish',
         'progres',
     ];
-
-    public function getStartFormattedAttribute()
-    {
-        return $this->start->format('d, M Y');
-    }
-    public function getFinishFormattedAttribute()
-    {
-        return $this->finish->format('d, M Y');
-    }
 }

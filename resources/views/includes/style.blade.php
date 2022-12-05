@@ -5,5 +5,4 @@
 <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-
 <title>@yield('title')</title>
