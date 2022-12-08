@@ -45,14 +45,14 @@
                   <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Nama Pekerjaan</th>
-                            <th>Deskripsi</th>
-                            <th style="width: 15%">Progress</th>
-                            <th>Status</th>
-                            <th>Tanggal Mulai</th>
-                            <th>Target Selesai</th>
-                            <th style="text-align: center">Action</th>
+                          <th>#</th>
+                          <th>Nama Pekerjaan</th>
+                          <th>Deskripsi</th>
+                          <th style="width: 15%">Progress</th>
+                          <th>Status</th>
+                          <th>Tanggal Mulai</th>
+                          <th>Target Selesai</th>
+                          <th style="text-align: center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
