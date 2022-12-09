@@ -19,7 +19,7 @@
                         <div class="form-group row">
                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Nama Pekerjaan</label>
                             <div class="col-sm-9">
-                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Nama Pekerjaan"
+                                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Nama Pekerjaan">
                                 value="{{ old('name') }}">
                                 @error('name')
                                     <div class="text-danger">
@@ -32,7 +32,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Persentase progres</label>
                             <div class="col-sm-9">
-                                <input type="number" name="progres" class="form-control @error('progres') is-infalid @enderror" placeholder="Persentase Progres"
+                                <input type="text" name="progres" class="form-control @error('progres') is-invalid @enderror" placeholder="Persentase Progres">
                                 value="{{ old('progres') }}">
                                 @error('progres')
                                     <div class="text-danger">
@@ -68,12 +68,12 @@
                         <div class="form-group row">
                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Tanggal Target Selesai</label>
                             <div class="col-sm-9">
-                              <input type="date" name="finish" class="form-control @error('finish') is-invalid @enderror">
-                              @error('finish')
-                                <div class="text-danger">
-                                    {{ $message }}
-                                </div>
-                              @enderror
+                                <input type="date" name="finish" class="form-control @error('finish') is-invalid @enderror">
+                                @error('finish')
+                                    <div class="text-danger">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                             </div>
                         </div>
 
