@@ -16,8 +16,13 @@ class ListprojectController extends Controller
      */
     public function index()
     {
-        $todo = DB::table('listprojects')->orderBy('progres')->paginate(5);
-        return view('project.index', ['todo' => $todo]);
+        // $todo = DB::table('listprojects')->orderBy('progres')->paginate(5);
+        return view('project.index', [
+            'todo'         => DB::table('listprojects')->orderBy('progres')->paginate(5),
+            'listselesai'  => DB::table('listprojects')->where('status', '=', 'finish')->count(),
+            'listtertunda' => DB::table('listprojects')->where('status', '=', 'delay')->count(),
+            'listprogres'  => DB::table('listprojects')->where('status', '=', 'on progres')->count(),
+        ]);
     }
 
     /**

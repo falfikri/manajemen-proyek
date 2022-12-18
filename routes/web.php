@@ -14,13 +14,9 @@ use App\Http\Controllers\ListprojectController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('project.index');
-// });
+Route::resource('/todo', ListprojectController::class);
 
-Route::resource('todo', ListprojectController::class);
-
-Route::get('onprogres', [ListprojectController::class, 'onprogres'])->name('onprogres');
-Route::get('delay', [ListprojectController::class, 'delay'])->name('delay');
-Route::get('finish', [ListprojectController::class, 'finish'])->name('finish');
-Route::get('report', [ListprojectController::class, 'report'])->name('report');
+Route::get('/onprogres', [ListprojectController::class, 'onprogres'])->name('onprogres');
+Route::get('/delay', [ListprojectController::class, 'delay'])->name('delay');
+Route::get('/finish', [ListprojectController::class, 'finish'])->name('finish');
+Route::get('/report', [ListprojectController::class, 'report'])->name('report');

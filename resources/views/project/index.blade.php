@@ -9,15 +9,51 @@
 @section('breadNow', 'List Kerja')
 
 @section('content')
-    @if ($message = Session::get('message'))
-    <div class="alert alert-success alert-dismissible show" role="alert">
-        <i class="mdi mdi-check"></i>
-        <strong>{{ $message }}</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    @endif
-
     <div class="row">
+      <div class="col-md-12">
+        <div class="tab-content tab-transparent-content">
+          <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+            <div class="row">
+              <div class="col-lg-4 col-lg-3 col-sm-6 grid-margin stretch-card">
+                <div class="card" style="border-radius: 10px">
+                  <div class="card-body text-center">
+                    <h5 class="mb-2 text-dark font-weight-normal">List Pekerjaan</h5>
+                    <h2 class="mb-4 text-dark font-weight-bold">Selesai</h2> </br>
+                    <h3 class="mb-0 font-weight-bold mt-2 text-dark">{{ $listselesai }} Pekerjaan</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-lg-3 col-sm-6 grid-margin stretch-card">
+                <div class="card"  style="border-radius: 10px">
+                  <div class="card-body text-center">
+                    <h5 class="mb-2 text-dark font-weight-normal">List Pekerjaan</h5>
+                    <h2 class="mb-4 text-dark font-weight-bold">Dalam Progres</h2> </br>
+                    <h3 class="mb-0 font-weight-bold mt-2 text-dark">{{ $listprogres }} Pekerjaan</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-lg-3 col-sm-6 grid-margin stretch-card">
+                <div class="card" style="border-radius: 10px">
+                  <div class="card-body text-center"  style="border-radius: 10px">
+                    <h5 class="mb-2 text-dark font-weight-normal">List Pekerjaan</h5>
+                    <h2 class="mb-4 text-dark font-weight-bold">Tertunda</h2> </br>
+                    <h3 class="mb-0 font-weight-bold mt-2 text-dark">{{ $listtertunda }} Pekerjaan</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+        @if ($message = Session::get('message'))
+          <div class="alert alert-success alert-dismissible show" role="alert">
+              <i class="mdi mdi-check"></i>
+              <strong>{{ $message }}</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        @endif
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card" style="border-radius: 10px">
               <div class="card-body">
