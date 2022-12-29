@@ -9,7 +9,6 @@
 @section('breadNow', 'Details Pekerjaan')
 
 @section('content')
-<div class="pace"></div>
 <div class="col-md-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">

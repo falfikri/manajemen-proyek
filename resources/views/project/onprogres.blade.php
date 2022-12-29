@@ -9,7 +9,6 @@
 @section('breadNow', 'List Sedang Berjalan')
 
 @section('content')
-<div class="pace"></div>
     @if ($message = Session::get('message'))
     <div class="alert alert-success alert-dismissible show" role="alert">
         <i class="mdi mdi-file-check"></i>
