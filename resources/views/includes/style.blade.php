@@ -7,3 +7,4 @@
 <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
 <link rel="shortcut icon" href="{{ asset('assets/images/logo/NU.ico') }}" type="image/x-icon">
 <title>@yield('title')</title>
+<link rel="stylesheet" href="{{ asset('assets/css/loading.css') }}">

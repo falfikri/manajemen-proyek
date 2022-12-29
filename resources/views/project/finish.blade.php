@@ -9,6 +9,7 @@
 @section('breadNow', 'List Selesai')
 
 @section('content')
+    <div class="pace"></div>
     @if ($message = Session::get('message'))
     <div class="alert alert-success alert-dismissible show" role="alert">
         <i class="mdi mdi-file-check"></i>
@@ -16,7 +17,6 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     @endif
-
     <div class="row">
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card" style="border-radius: 10px">
